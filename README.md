@@ -5,5 +5,5 @@ Octocat Clicker
 
 > Instead of talking about GamerGate, we should be talking about Octocat Clicker.
 
-    ~ ***Octocat Times***
+~ ***Octocat Times***
 
