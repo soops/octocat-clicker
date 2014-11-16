@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Octocat Clicker</title>
+        <script src="jquery-1.11.1.js">
+        </script>
+        <script>
+            var octocats = parseInt(localStorage.getItem("octocount"))||0;
+            function increment(n) {
+                octocats += n;
+                localStorage.setItem("octocount", octocats);
+                document.getElementById("octocount").innerHTML = "Octocount: " + octocats;
+            }
+        </script>
+        <link rel="stylesheet" href="animate.css">
+    </head>
+    <body>
+        <img src="http://ottis.github.io/inrt/images/octocat.png" onclick="increment(1)" style="margin:0 auto" id="octocatawesome">
+        <h1 id="octocount" align="center">
+            Octocount: 0
+        </h1>
+        <div>
+          <script>
+          $('#octocatawesome').click(function() {
+        		  $(this).toggleClass('animated pulse');
+        	});
+          </script>
+        </div>
+        
+        <script>increment(0)</script>
+    </body>
+</html>
